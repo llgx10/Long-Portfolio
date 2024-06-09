@@ -1554,3 +1554,74 @@ a:focus {
         padding: 0 5px;
     }
 }
+
+#experience-banner {
+    background-color: white;
+}
+
+.bizzi {
+    text-align: left;
+    margin-left: 15%;
+}
+
+.bizzi h4 {
+    padding-left: 20px; /* Adjust padding to match bullet and margin */
+}
+
+.bizzi h5 {
+    padding-left: 20px; /* Adjust padding to match bullet and margin */
+}
+
+.bizzi h4:first-of-type::before {
+    content: "";
+    display: inline-block;
+    width: 10px; /* Size of the bullet */
+    height: 10px; /* Size of the bullet */
+    background-color: yellow;
+    margin-right: 10px; /* Space between bullet and text */
+    vertical-align: middle;
+    margin-left: -20px; /* Offset the padding to align the bullet */
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    grid-gap: 10px; /* Space between grid items */
+    margin-top: 20px; /* Space above the grid */
+    margin-left: 16%; /* Align grid with the rest of the content */
+}
+
+.grid-item {
+    position: relative;
+    padding-left: 40px; /* Padding to make room for the bullet */
+    text-align: left; /* Ensure text is aligned to the left */
+}
+
+.grid-item::before {
+    content: "";
+    position: absolute;
+    width: 10px; /* Bullet size */
+    height: 10px; /* Bullet size */
+    background-color: yellow;
+    left: 0; /* Align the bullet to the left edge */
+    top: 50%; /* Center the bullet vertically */
+    transform: translateY(-50%); /* Correct the vertical alignment */
+}
+
+.info {
+    flex-grow: 1; /* Allows the text content to take up available space */
+}
+
+.logo {
+    margin-left: 1%; /* Adjust space between text and logo */
+    height: 30px; /* Adjust size as needed */
+    width: auto; /* Maintain aspect ratio */
+}
+
+.custom-hr {
+    border: none;         /* Remove default border */
+    height: 2px;          /* Set the thickness of the line */
+    background-color: yellow; /* Set the color of the line */
+    margin-left: 10%;     /* Adjust left margin */
+    margin-right: 10%;    /* Adjust right margin */
+}
